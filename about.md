@@ -15,5 +15,5 @@ Get in touch at:
 [Linkedin](https://www.linkedin.com/in/didac-bigorda/)
 
 Want to learn more about my journey? Check out this video!:
-{% include youtube.html id=M-D20T04DsM %}
+{% include youtube.html id="M-D20T04DsM" %}
 
