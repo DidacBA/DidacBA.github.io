@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to my blog!"
+title:  "Welcome to my blog/website!"
 date:   2019-07-25 15:48:11 -0400
 categories: update hello webassembly C
 ---
