@@ -8,9 +8,11 @@ After several years of working as a translator, from English and Japanese to Spa
 
 Technologies: Javascript, HTML & CSS, React, Express.js, Node.js, MongoDB.
 
-
 You can check some of my work at:
 [Github](https://github.com/DidacBA)
 
-Or get in touch at:
-[Linkedin](https://www.linkedin.com/in/didac-bigorda/) 
+Want to learn more about my journey? Check out this video!:
+[Youtube](https://www.youtube.com/watch?v=M-D20T04DsM)
+
+Get in touch at:
+[Linkedin](https://www.linkedin.com/in/didac-bigorda/)
