@@ -12,7 +12,7 @@ You can check some of my work at:
 [Github](https://github.com/DidacBA)
 
 Want to learn more about my journey? Check out this video!:
-[Youtube](https://www.youtube.com/watch?v=M-D20T04DsM)
+{% youtube "https://www.youtube.com/watch?v=M-D20T04DsM" %}
 
 Get in touch at:
 [Linkedin](https://www.linkedin.com/in/didac-bigorda/)
