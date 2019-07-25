@@ -11,8 +11,9 @@ Technologies: Javascript, HTML & CSS, React, Express.js, Node.js, MongoDB.
 You can check some of my work at:
 [Github](https://github.com/DidacBA)
 
+Get in touch at:
+[Linkedin](https://www.linkedin.com/in/didac-bigorda/)
+
 Want to learn more about my journey? Check out this video!:
 {% include youtube.html id=M-D20T04DsM %}
 
-Get in touch at:
-[Linkedin](https://www.linkedin.com/in/didac-bigorda/)
