@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to my blog/website!"
+title:  "Hi!"
 date:   2019-07-25 23:54:11 -0400
-categories: update hello webassembly C
+categories: hi
 ---
 
 Hello Molly!
