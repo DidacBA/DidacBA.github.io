@@ -30,19 +30,11 @@
     font-size: 4rem;
   }
 
-  .minerva:hover {
-    background-color: rgb(78, 69, 69);
-  }
-
   .splitify {
     font-family: 'Oswald', sans-serif;
     background-color: #01233F;
     color: white !important;
     font-size: 2rem;
-  }
-
-  .splitify:hover {
-    background-color: rgb(1, 46, 82);
   }
 
   .alexandria {
@@ -52,13 +44,35 @@
     font-size: 2rem;
   }
 
-  .alexandria:hover {
-    background-color: rgb(117, 122, 160);
+  .hover-text {
+    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: whitesmoke;
+  }
+
+  .project-card .hover-text {
+    display: none;
+  }
+
+  .project-card:hover .hover-text {
+    display: block;
+  }
+
+  .project-card:hover .hover-title {
+    display: none;
   }
 </style>
 
 <div class="projects-wrapper">
-  <a class="project-card minerva" href="https://github.com/DidacBA/minerva" target="_blank">Minerva</a>
-  <a class="project-card splitify" href="https://github.com/DidacBA/Splitify" target="_blank">Splitify</a>
-  <a class="project-card alexandria" href="https://github.com/DidacBA/Alexandria" target="_blank">Alexandria</a>
+  <a class="project-card minerva" href="https://github.com/DidacBA/minerva" target="_blank">
+    <span class="hover-title">Minerva</span>
+    <span class="hover-text">Shooting video game built with the HTML canvas element and JavaScript</span>
+  </a>
+  <a class="project-card splitify" href="https://github.com/DidacBA/Splitify" target="_blank">
+    <span class="hover-title">Splitify</span>
+    <span class="hover-text">Shooting video game built with the HTML canvas element and JavaScript</span>
+  </a>
+  <a class="project-card alexandria" href="https://github.com/DidacBA/Alexandria" target="_blank">
+    <span class="hover-title">Alexandria</span>
+    <span class="hover-text">Shooting video game built with the HTML canvas element and JavaScript</span>
+  </a>
 </div>
