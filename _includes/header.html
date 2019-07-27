@@ -3,7 +3,7 @@
   <style>
       .site-header {
         background-color: #424242 !important;
-        min-height: 30vh !important;
+        min-height: 100% !important;
       }
     
       .site-title {
@@ -20,6 +20,20 @@
     
       .site-nav .page-link {
         color: whitesmoke;
+      }
+
+      .title-social-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title-social-wrapper .username {
+        color: whitesmoke;
+      }
+
+      .title-blurb {
+        color: grey;
+        font-size: 20px;
       }
     
       @media screen and (max-width: 600px) {
@@ -56,5 +70,9 @@
         </div>
       </nav>
     {%- endif -%}
+  </div>
+  <div class="wrapper title-social-wrapper">
+    <h2 class="title-blurb">{{ site.header-blurb }}</h2>
+    {% include social.html %}
   </div>
 </header>

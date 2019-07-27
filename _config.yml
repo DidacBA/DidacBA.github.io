@@ -17,10 +17,16 @@ title: Didac Bigorda, Web Developer
 email: didacbigorda@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Didac's personal blog and website, where I share thoughts and experiences as I forge my way as a web developer.
+header-blurb: >-
+  Personal blog dedicated to code, photography and bananas
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Social media links
 twitter_username: didacadid
 github_username:  DidacBA
+instagram_username: didacbigorda
+linkedin_username: didac-bigorda
 
 # Build settings
 markdown: kramdown
