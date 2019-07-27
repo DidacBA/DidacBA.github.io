@@ -49,16 +49,40 @@
     color: whitesmoke;
   }
 
+  .hover-title {
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
   .project-card .hover-text {
     display: none;
   }
 
   .project-card:hover .hover-text {
     display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
   }
 
   .project-card:hover .hover-title {
     display: none;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+  }  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+  }
+  @-webkit-keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+  }  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
   }
 </style>
 
@@ -69,10 +93,10 @@
   </a>
   <a class="project-card splitify" href="https://github.com/DidacBA/Splitify" target="_blank">
     <span class="hover-title">Splitify</span>
-    <span class="hover-text">Shooting video game built with the HTML canvas element and JavaScript</span>
+    <span class="hover-text">Bill splitting web app built with NodeJS and Express</span>
   </a>
   <a class="project-card alexandria" href="https://github.com/DidacBA/Alexandria" target="_blank">
     <span class="hover-title">Alexandria</span>
-    <span class="hover-text">Shooting video game built with the HTML canvas element and JavaScript</span>
+    <span class="hover-text">MERN stack book sharing web app</span>
   </a>
 </div>
