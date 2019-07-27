@@ -74,7 +74,11 @@
     display: inline-flex !important;
     align-items: center;
   }
-  
+
+  .hover-image {
+    max-height: 50%;
+  }
+
   @-webkit-keyframes fadeIn {
     from { opacity: 0; }
       to { opacity: 1; }
@@ -91,11 +95,17 @@
     from { opacity: 1; }
       to { opacity: 0; }
   }
+
+  @media screen and (max-width: 600px) {
+    .projects-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+  }
 </style>
 
 <div class="projects-wrapper">
   <a class="project-card minerva" href="https://github.com/DidacBA/minerva" target="_blank">
-    <img class="hover-text" src="{{ site.baseurl }}/assets/img/minerva-screenshot.png">
+    <img class="hover-text hover-image" src="{{ site.baseurl }}/assets/img/minerva-screenshot.png">
     <span class="hover-title">Minerva</span>
     <span class="hover-text project-blurb">Shooting video game built with the HTML canvas element and JavaScript</span>
   </a>
