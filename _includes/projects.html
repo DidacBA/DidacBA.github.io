@@ -21,6 +21,7 @@
 
   .project-card:hover {
     text-decoration: none;
+    justify-content: space-between;
   }
 
   .minerva {
@@ -68,6 +69,12 @@
     display: none;
   }
 
+  .project-card:hover .project-blurb {
+    height: 100%;
+    display: inline-flex !important;
+    align-items: center;
+  }
+  
   @-webkit-keyframes fadeIn {
     from { opacity: 0; }
       to { opacity: 1; }
@@ -88,15 +95,18 @@
 
 <div class="projects-wrapper">
   <a class="project-card minerva" href="https://github.com/DidacBA/minerva" target="_blank">
+    <img class="hover-text" src="{{ site.baseurl }}/assets/img/minerva-screenshot.png">
     <span class="hover-title">Minerva</span>
-    <span class="hover-text">Shooting video game built with the HTML canvas element and JavaScript</span>
+    <span class="hover-text project-blurb">Shooting video game built with the HTML canvas element and JavaScript</span>
   </a>
   <a class="project-card splitify" href="https://github.com/DidacBA/Splitify" target="_blank">
+    <img class="hover-text" src="{{ site.baseurl }}/assets/img/splitify-screenshot.png">
     <span class="hover-title">Splitify</span>
-    <span class="hover-text">Bill splitting web app built with NodeJS and Express</span>
+    <span class="hover-text project-blurb">Bill splitting web app built with NodeJS and Express</span>
   </a>
   <a class="project-card alexandria" href="https://github.com/DidacBA/Alexandria" target="_blank">
+    <img class="hover-text" src="{{ site.baseurl }}/assets/img/alexandria-screenshot.png">
     <span class="hover-title">Alexandria</span>
-    <span class="hover-text">MERN stack book sharing web app</span>
+    <span class="hover-text project-blurb">MERN stack book sharing web app</span>
   </a>
 </div>
