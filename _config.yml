@@ -20,13 +20,16 @@ description: >- # this means to ignore newlines until "baseurl:"
 header-blurb: >-
   Personal blog dedicated to code, travel and bananas
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://didacbigorda.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Social media links
 twitter_username: didacadid
 github_username:  DidacBA
 instagram_username: didacbigorda
 linkedin_username: didac-bigorda
+
+disqus:
+  shortname: didacbigorda
 
 # Build settings
 markdown: kramdown
