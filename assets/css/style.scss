@@ -1,8 +1,12 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
 .site-header {
-  background-color: #3f3f3f;
+  background-color: #424242 !important;
 }
+
+.boo {
+  background: white;
+}
+
+@import "{{ site.theme }}";
