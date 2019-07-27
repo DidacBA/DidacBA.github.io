@@ -1,4 +1,7 @@
 <style>
+  @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
   .projects-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -10,17 +13,52 @@
   .project-card {
     max-width: 400px;
     background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .project-card:hover {
+    text-decoration: none;
+  }
+
+  .minerva {
+    font-family: 'Libre Barcode 128 Text', cursive;
+    color: rgb(237, 253, 86) !important;
+    background-color: rgb(59, 56, 56);
+    font-size: 4rem;
+  }
+
+  .minerva:hover {
+    background-color: rgb(78, 69, 69);
+  }
+
+  .splitify {
+    font-family: 'Oswald', sans-serif;
+    background-color: #01233F;
+    color: white !important;
+    font-size: 2rem;
+  }
+
+  .splitify:hover {
+    background-color: rgb(1, 46, 82);
+  }
+
+  .alexandria {
+    font-family: 'Josefin Sans', sans-serif;
+    color: whitesmoke !important;
+    background-color: rgb(94, 98, 128);
+    font-size: 2rem;
+  }
+
+  .alexandria:hover {
+    background-color: rgb(117, 122, 160);
   }
 </style>
 
 <div class="projects-wrapper">
-  <div class="project-card">
-    <a href="https://github.com/DidacBA/minerva">Minerva</a>
-  </div>
-  <div class="project-card">
-    <a href="https://github.com/DidacBA/Splitify">Splitify</a>
-  </div>
-  <div class="project-card">
-    <a href="https://github.com/DidacBA/Alexandria">Alexandria</a>
-  </div>
+  <a class="project-card minerva" href="https://github.com/DidacBA/minerva">Minerva</a>
+  <a class="project-card splitify" href="https://github.com/DidacBA/Splitify">Splitify</a>
+  <a class="project-card alexandria" href="https://github.com/DidacBA/Alexandria">Alexandria</a>
 </div>
