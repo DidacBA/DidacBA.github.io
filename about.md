@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-{% include style.html %}
-
 After several years of working as a translator, from English and Japanese to Spanish, I decided to start speaking the language of computers and became a web developer. To that end, I completed the Web Development bootcamp at Ironhack Barcelona. Since completing bootcamp, I've been intersted in studying and building up my skills as a web developer.
 
 Technologies: Javascript, HTML & CSS, React, Express.js, Node.js, MongoDB.
