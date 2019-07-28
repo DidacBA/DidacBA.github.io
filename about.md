@@ -14,6 +14,6 @@ You can check some of my work at:
 Get in touch at:
 [Linkedin](https://www.linkedin.com/in/didac-bigorda/)
 
-Want to learn more about my journey? Check out this video!:
+Want to learn more about my journey and great post-it skills? Check out this video!:
 {% include youtube.html id="M-D20T04DsM" %}
 
