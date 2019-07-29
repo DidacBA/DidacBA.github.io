@@ -37,6 +37,9 @@ theme: minima
 plugins: 
   - jekyll-feed
 
+feed:
+  path: Twitter.xml
+
 defaults:
   - scope:
       path: "assets/img"
