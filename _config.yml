@@ -34,7 +34,8 @@ disqus:
 # Build settings
 markdown: kramdown
 theme: minima
-
+plugins: 
+  - jekyll-feed
 
 feed:
   path: feeds/Linkedin.xml
