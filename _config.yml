@@ -34,11 +34,10 @@ disqus:
 # Build settings
 markdown: kramdown
 theme: minima
-plugins: 
-  - jekyll-feed
+
 
 feed:
-  path: Twitter.xml
+  path: feeds/Linkedin.xml
 
 defaults:
   - scope:
