@@ -38,6 +38,7 @@ theme: minima
 
 feed:
   path: feeds/Linkedin.xml
+  path: feeds/Twitter.xml
 
 defaults:
   - scope:
