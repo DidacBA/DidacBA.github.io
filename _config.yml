@@ -37,10 +37,6 @@ theme: minima
 plugins: 
   - jekyll-feed
 
-feed:
-  path: feeds/Linkedin.xml
-  path: feeds/Twitter.xml
-
 defaults:
   - scope:
       path: "assets/img"
