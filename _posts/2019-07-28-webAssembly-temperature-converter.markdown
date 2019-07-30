@@ -3,7 +3,7 @@ layout: post
 title:  "WebAssembly temperature converter"
 date:   2019-07-28 19:27:00 -0400
 categories: update webassembly C
-excerpt: "I wrote something!"
+excerpt: "A WebAssembly fueled temperature conversion website"
 ---
 
 Yesterday I completed the small project I was talking about in the previous post, a Fahrenheit/Celsius converter with some WebAssembly code. The code was written in C and I used [WebAssembly.studio](https://webassembly.studio/) to kickstart the project.
