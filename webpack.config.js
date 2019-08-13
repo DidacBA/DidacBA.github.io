@@ -10,7 +10,7 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, 'react-dist'),
+    path: path.resolve(__dirname, './assets/js'),
     filename: 'index_bundle.js'
   },
   plugins: [
