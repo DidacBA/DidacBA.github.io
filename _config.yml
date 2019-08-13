@@ -22,6 +22,10 @@ header-blurb: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://didacbigorda.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+#Projects
+collections:
+  - projects
+
 # Social media links
 twitter_username: didacadid
 github_username:  DidacBA
