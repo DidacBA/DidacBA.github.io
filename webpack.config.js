@@ -9,6 +9,7 @@ module.exports = {
       { test: /\.(js)$/, use: 'babel-loader' }
     ]
   },
+  watch: true,
   output: {
     path: path.resolve(__dirname, './assets/js'),
     filename: 'index_bundle.js'

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PostsList from './components/PostsList';
+import api from './api/api';
 
 class App extends React.Component {
   state = {
@@ -15,7 +16,13 @@ class App extends React.Component {
   };
 
   getWebsite = () => {
-    getWebAsync('https://didacbigorda.com');
+    api.getWebAsync('https://didacbigorda.com')
+      .then((postsList) => {
+        const mappedList = postsList.map((el) => el.innerText);
+        this.setState(({prevState}) => ({
+          posts: mappedList,
+        }));
+      })
   }
 
   render() {
@@ -27,22 +34,6 @@ class App extends React.Component {
       </div>
     )
   }
-}
-
-function getWebAsync(website) {
-  fetch(website)
-    .then((response) => {
-      return response.text()
-    })
-    .then((html) => {
-      let parser = new DOMParser();
-
-      let doc = parser.parseFromString(html, "text/html");
-      console.log(doc.querySelector('.post-list'));
-    })
-    .catch((err) => {  
-      console.log('Failed to fetch page: ', err);  
-  });
 }
 
 ReactDOM.render(
