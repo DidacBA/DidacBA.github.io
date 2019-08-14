@@ -5,15 +5,9 @@ import api from './api/api';
 
 class App extends React.Component {
   state = {
-    count: 0,
     showTest: false,
+    value: '',
   }
-
-  handleClick = () => {
-    this.setState(({ showTest }) => ({
-      showTest: !showTest
-    }));
-  };
 
   getWebsite = () => {
     api.getWebAsync('https://didacbigorda.com')
@@ -25,12 +19,19 @@ class App extends React.Component {
       })
   }
 
+  handleChange = (event) => {
+    console.log('Hello')
+    this.setState(({prevState}) => ({
+      value: event.target.value,
+    }));
+  }
+
   render() {
     return (
       <div className='home'>
-        <button onClick={this.handleClick}>Show/Hide Test</button>
-        <button onClick={this.getWebsite}>Get Website</button>
-        {this.state.showTest && <PostsList />}
+        <input type="text" onChange={this.handleChange} />
+        <button onClick={this.getWebsite}>Search</button>
+        { this.state.posts && <PostsList posts={this.state.posts} /> }
       </div>
     )
   }
