@@ -1,18 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PostsList from './components/PostsList';
 
 class App extends React.Component {
   state = {
     count: 0,
-  }
-
-  reactify() {
-    document.body.innerHTML = 'Hola';
+    showTest: false,
   }
 
   handleClick = () => {
-    this.setState(({ count }) => ({
-      count: count + 1
+    this.setState(({ showTest }) => ({
+      showTest: !showTest
     }));
   };
 
@@ -22,14 +20,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
-        <div>
-          {this.state.count}
-        </div>
-        <button onClick={this.handleClick}>Increment counter</button>
-        <button onClick={this.reactify}>REACTIFY</button>
+      <div className='home'>
+        <button onClick={this.handleClick}>Show/Hide Test</button>
         <button onClick={this.getWebsite}>Get Website</button>
-      </>
+        {this.state.showTest && <PostsList />}
+      </div>
     )
   }
 }
