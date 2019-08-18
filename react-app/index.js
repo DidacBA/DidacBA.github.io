@@ -5,25 +5,17 @@ import api from './api/api';
 
 class App extends React.Component {
   state = {
-    showTest: false,
-    value: '',
+    posts: [],
   }
 
   getWebsite = () => {
-    api.getWebAsync('https://didacbigorda.com')
+    api.getNodes('https://didacbigorda.com', '.post-list li')
       .then((postsList) => {
-        const mappedList = postsList.map((el) => el.innerText);
+        // const mappedList = postsList.map((el) => el.innerText); // Not useful anymore
         this.setState(({prevState}) => ({
-          posts: mappedList,
+          posts: postsList,
         }));
       })
-  }
-
-  handleChange = (event) => {
-    console.log('Hello')
-    this.setState(({prevState}) => ({
-      value: event.target.value,
-    }));
   }
 
   render() {

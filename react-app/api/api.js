@@ -1,13 +1,13 @@
 const api = {
-  async getWebAsync(website) {
+  async getNodes(url, className) {
     try {
-      const response = await fetch(website);
+      const response = await fetch(url);
       const html = await response.text();
       let parser = new DOMParser();
       let doc = parser.parseFromString(html, "text/html");
-      let linksNodeList = doc.querySelectorAll('.post-link');
-      let arrayLinkList = await Array.prototype.slice.call(linksNodeList);
-      return arrayLinkList;
+      let nodeList = doc.querySelectorAll(className);
+      let arrayList = await Array.prototype.slice.call(nodeList);
+      return arrayList;
     }
     catch (err) {
       console.log('Failed to fetch website: ', err);

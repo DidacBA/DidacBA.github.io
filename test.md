@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Test
-permalink: /test/
+title: Search
+permalink: /search/
 ---
 
 <div id="react-root"></div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 export default class PostsList extends React.Component {
   render() {
@@ -7,16 +6,23 @@ export default class PostsList extends React.Component {
       'background-color': '#fdfdfd',
       'z-index': '10000',
     };
+    const posts = this.props.posts;
     return (
       <div style={ulStyle}>
-        <h2 className="post-list-heading">Search Results:</h2>
         <ul className="post-list">
+          {posts.map((post, index) =>
           <li>
-            <span className="post-meta">Post Test</span>
+            <span class="post-meta">{post.querySelector('.post-meta').innerText}</span>
             <h3>
-              <a className="post-link" href="">Test post title</a>
+              <a 
+                key={index} 
+                class="post-link" 
+                href={'https://didacbigorda.com' + post.querySelector('.post-link').getAttribute('href')}
+              >
+              {post.querySelector('.post-link').innerText}</a>
             </h3>
           </li>
+          )}
         </ul>
       </div>
     )
