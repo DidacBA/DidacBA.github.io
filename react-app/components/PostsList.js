@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default class PostsList extends React.Component {
+
   render() {
     const ulStyle = {
       'background-color': '#fdfdfd',
@@ -18,8 +19,7 @@ export default class PostsList extends React.Component {
                 key={index} 
                 class="post-link" 
                 href={'https://didacbigorda.com' + post.querySelector('.post-link').getAttribute('href')}
-              >
-              {post.querySelector('.post-link').innerText}</a>
+              >{post.querySelector('.post-link').innerText}</a>
             </h3>
           </li>
           )}
