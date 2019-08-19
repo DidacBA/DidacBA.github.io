@@ -1,20 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class SearchBar extends Component {
+export default function SearchBar(props) {
 
-  handleChange = (e) => {
+  const handleChange = (e) => {
     if (e.target.value === '') {
-      const { resetSearch } = this.props;
+      const { resetSearch } = props;
       resetSearch();
     } else {
       const pattern = `${e.target.value}`;
       const searchRegExp = new RegExp(pattern, "i");
-      const { search } = this.props;
+      const { search } = props;
       search(searchRegExp);
     }
   }
 
-  styles = {
+  const styles = {
     input: {
       width: '100%',
       height: '30px',
@@ -22,12 +22,10 @@ export default class SearchBar extends Component {
     }
   }
 
-  render() {
-    return (
-      <>
-        <input type="text" placeholder="Search Posts" 
-            onChange={this.handleChange} style={this.styles.input} />
-      </>
-    )
-  }
+  return (
+    <>
+      <input type="text" placeholder="Search Posts" 
+          onChange={handleChange} style={styles.input} />
+    </>
+  )
 }
