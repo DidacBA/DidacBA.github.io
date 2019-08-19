@@ -16,9 +16,10 @@ export default function SearchBar(props) {
 
   const styles = {
     input: {
-      width: '98%',
-      height: '30px',
-      margin: '0px 0px 20px 0px'
+      'width': '98%',
+      'height': '30px',
+      'margin': '0px 0px 20px 0px',
+      'font-size': '18px',
     }
   }
 
