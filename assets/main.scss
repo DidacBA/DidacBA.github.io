@@ -1,0 +1,228 @@
+---
+---
+
+@import "minima";
+
+/* HEADER STYLES */
+
+.parallax-header {
+  background-image: url("{{ site.baseurl }}/assets/img/IMG_2026.jpg");
+  height: 80vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+       animation: fadein 2s;
+}
+
+.nav-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #424242;
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+.site-header {
+  background-color: #424242 !important;
+  min-height: 100% !important;
+}
+
+.site-title {
+  color: whitesmoke;
+}
+
+.site-title:visited {
+  color: whitesmoke;
+}
+
+.site-title:hover {
+  text-decoration: none;
+}
+
+.site-nav .page-link {
+  color: whitesmoke;
+}
+
+.title-social-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-social-wrapper .username {
+  color: whitesmoke;
+}
+
+.title-blurb {
+  color: grey;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav .page-link {
+    color: #111;
+  }
+}
+
+/* FOOTER STYLES */
+
+#picture {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#footer-pic-div {
+  display: flex;
+}
+
+#footer-desc-p {
+  margin-left: 10px;
+}
+
+/* PROJECTS STYLES */
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 300px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.project-card {
+  max-width: 400px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-card:hover {
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.minerva {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  color: rgb(237, 253, 86) !important;
+  background-color: rgb(59, 56, 56);
+  font-size: 4rem;
+}
+
+.splitify {
+  font-family: 'Oswald', sans-serif;
+  background-color: #01233F;
+  color: white !important;
+  font-size: 2rem;
+}
+
+.alexandria {
+  font-family: 'Josefin Sans', sans-serif;
+  color: whitesmoke !important;
+  background-color: rgb(94, 98, 128);
+  font-size: 2rem;
+}
+
+.hover-text {
+  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: whitesmoke;
+}
+
+.hover-title {
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+.project-card .hover-text {
+  display: none;
+}
+
+.project-card:hover .hover-text {
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+.project-card:hover .hover-title {
+  display: none;
+}
+
+.project-card:hover .project-blurb {
+  height: 100%;
+  display: inline-flex !important;
+  align-items: center;
+}
+
+.hover-image {
+  max-height: 100%;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}  
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes fadeOut {
+  from { opacity: 1; }
+    to { opacity: 0; }
+}  
+@keyframes fadeOut {
+  from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@media screen and (max-width: 600px) {
+  .projects-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
+/* VIDEO STYLES */
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
