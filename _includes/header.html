@@ -1,7 +1,14 @@
-<header class="site-header">
+{%- if page.title -%}
+{%- else -%}
+<div class="parallax-header"></div>
+<div id="header-top"></div>
+{%- endif -%}
 
-  <div class="parallax-header"></div>
-
+{%- if page.title -%}
+<header class="site-header" id="header">
+{%- else -%}
+<header class="site-header-sticky" id="header">
+{%- endif -%}
   <div class="wrapper nav-wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}

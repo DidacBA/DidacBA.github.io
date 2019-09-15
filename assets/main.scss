@@ -5,9 +5,14 @@
 
 /* HEADER STYLES */
 
+#header-top {
+  height: 1px;
+  background-color: #424242;
+}
+
 .parallax-header {
   background-image: url("{{ site.baseurl }}/assets/img/IMG_2026.jpg");
-  height: 80vh; 
+  height: 89vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,13 +22,24 @@
    -ms-animation: fadein 2s; /* Internet Explorer */
     -o-animation: fadein 2s; /* Opera < 12.1 */
        animation: fadein 2s;
+  @media screen and (max-width: 600px) {
+    height: 82vh;
+  }
 }
 
-.nav-wrapper {
+.site-header-sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #424242;
+}
+
+.site-header {
+  background-color: #424242;
+}
+
+.header-sticky {
+  display: none;
 }
 
 @keyframes fadein {
